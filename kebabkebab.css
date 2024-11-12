@@ -168,6 +168,11 @@ nav {
     color: #555;
 }
 
+#about h2 {
+
+    color: #000000;
+}
+
 /* Section Contact */
 #contact {
     padding: 50px;
@@ -178,6 +183,7 @@ nav {
 #contact h2 {
     font-size: 36px;
     margin-bottom: 30px;
+    color: #000000;
 }
 
 .contact-form {
