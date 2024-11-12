@@ -68,7 +68,7 @@ nav {
 .hero-image {
     width: 100%;
     height: auto;
-     margin-top: 450px;
+    margin-top: 450px;
     margin-bottom: 50px;
 }
 
@@ -152,7 +152,7 @@ nav {
 /* Section À Propos */
 #about {
     padding: 50px;
-    background-color: #f4f4f4;
+    background-color: #FFD700;
     text-align: center;
 }
 
