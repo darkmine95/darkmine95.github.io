@@ -151,7 +151,7 @@ nav {
 
 /* Section À Propos */
 #about {
-     padding: 50px;
+    padding: 50px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -165,7 +165,7 @@ nav {
     font-size: 20px;
     width: 70%;
     margin: 0 auto;
-    color: #ffffff;
+    color: #555;
 }
 
 #about h2 {
