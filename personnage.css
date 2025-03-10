@@ -1,0 +1,139 @@
+body {
+    background-color: #1b1b1b; /* Couleur de fond sombre */
+    color: #fff; /* Texte en blanc */
+    font-family: 'Noto Sans JP', sans-serif; /* Police de caractères */
+    text-align: center; /* Alignement du texte au centre */
+    margin: 0; /* Pas de marge extérieure */
+    padding: 0; /* Pas de remplissage intérieur */
+    transition: background-color 0.3s, color 0.3s; /* Transition pour les changements de couleur */
+    animation: gradientBackground 15s ease infinite; /* Animation de fond */
+    background-size: 200% 200%; /* Taille du fond */
+}
+
+body.light-theme {
+    background-color: #fff; /* Couleur de fond claire */
+    color: #000; /* Texte en noir */
+    animation: none; /* Pas d'animation */
+    background: #fff; /* Fond blanc */
+}
+
+body.dark-mode {
+    background-color: #121212; /* Couleur de fond très sombre */
+    color: #ffffff; /* Texte en blanc */
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%; /* Position initiale du fond */
+    }
+    50% {
+        background-position: 100% 50%; /* Position intermédiaire */
+    }
+    100% {
+        background-position: 0% 50%; /* Retour à la position initiale */
+    }
+}
+
+.container {
+    max-width: 1200px; /* Largeur maximale */
+    margin: 20px auto; /* Marges extérieures, centrage horizontal */
+    padding: 20px; /* Remplissage intérieur */
+    background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Ombre portée */
+    animation: fadeIn 1s ease-in-out; /* Animation d'apparition */
+    position: relative; /* Positionnement relatif */
+}
+
+.container.light-theme {
+    background: rgba(0, 0, 0, 0.1); /* Fond semi-transparent sombre */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre portée sombre */
+}
+
+h1 {
+    font-size: 2.5rem; /* Taille de la police */
+    color: #e94560; /* Couleur du texte */
+    margin-bottom: 20px; /* Marge inférieure */
+    animation: slideIn 1s ease-in-out, colorChange 3s infinite; /* Animations */
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        color: #e94560; /* Couleur initiale et finale */
+    }
+    50% {
+        color: #ffcc00; /* Couleur intermédiaire */
+    }
+}
+
+#characterName {
+    font-size: 2.5rem; /* Taille de la police */
+    color: #e94560; /* Couleur du texte */
+    margin-bottom: 20px; /* Marge inférieure */
+    animation: slideIn 1s ease-in-out, colorChange 3s infinite; /* Animations */
+}
+
+#characterImage {
+    width: 100%; /* Largeur complète */
+    max-width: 300px; /* Largeur maximale */
+    border-radius: 10px; /* Bords arrondis */
+    border: 3px solid #e94560; /* Bordure */
+    margin-top: 10px; /* Marge supérieure */
+}
+
+.character-details-container {
+    display: flex; /* Disposition en flexbox */
+    align-items: flex-start; /* Alignement vertical */
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+#characterDetails {
+    text-align: left; /* Texte aligné à gauche */
+    margin-top: 10px; /* Marge supérieure */
+}
+
+#characterDetails h2 {
+    font-size: 1.5rem; /* Taille de la police */
+    color: #e94560; /* Couleur du texte */
+    margin-bottom: 10px; /* Marge inférieure */
+}
+
+#characterDetails p {
+    font-size: 1rem; /* Taille de la police */
+    margin-bottom: 10px; /* Marge inférieure */
+}
+
+#backButton {
+    margin-top: 20px; /* Marge supérieure */
+    padding: 10px 20px; /* Remplissage intérieur */
+    background-color: #e94560; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bords arrondis */
+    cursor: pointer; /* Curseur en forme de main */
+    font-weight: bold; /* Texte en gras */
+    transition: background-color 0.3s, transform 0.3s; /* Transitions */
+}
+
+#backButton:hover {
+    background-color: #cc0000; /* Couleur de fond au survol */
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Invisible au début */
+    }
+    to {
+        opacity: 1; /* Visible à la fin */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Déplacement initial */
+    }
+    to {
+        transform: translateY(0); /* Position finale */
+    }
+}

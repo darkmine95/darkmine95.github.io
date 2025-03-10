@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!-- Déclaration du type de document (HTML5) -->
+<html lang="fr"> <!-- Début du document HTML avec la langue française -->
+<head> <!-- Section d'en-tête du document -->
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuration pour le responsive design -->
+    <title>Anime no Sekai</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="page_principale.css"> <!-- Lien vers la feuille de style CSS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- Lien vers la bibliothèque AOS pour les animations -->
+</head>
+<body> <!-- Corps du document -->
+    <div class="container"> <!-- Conteneur principal de la page -->
+        <div class="header"> <!-- En-tête de la page -->
+            <div id="userLists" class="hidden"> <!-- Section des listes utilisateur (masquée par défaut) -->
+                <div class="list-container"> <!-- Conteneur pour la liste des favoris -->
+                    <h3>Favoris</h3> <!-- Titre de la section Favoris -->
+                    <div id="favoritesList" class="user-list"></div> <!-- Liste des favoris (vide par défaut) -->
+                </div>
+                <div class="list-container"> <!-- Conteneur pour la liste Watchlist -->
+                    <h3>Watchlist</h3> <!-- Titre de la section Watchlist -->
+                    <div id="watchlist" class="user-list"></div> <!-- Liste Watchlist (vide par défaut) -->
+                </div>
+            </div>
+            <div class="header-buttons"> <!-- Conteneur pour les boutons de l'en-tête -->
+                <button id="loginButton">👤 Se Connecter</button> <!-- Bouton de connexion -->
+                <button id="themeToggle">🌙 Mode Sombre</button> <!-- Bouton pour basculer entre les thèmes clair et sombre -->
+            </div>
+        </div>
+        <h1 data-aos="fade-down">Anime no Sekai</h1> <!-- Titre principal de la page avec animation AOS -->
+        <div id="searchArea"> <!-- Zone de recherche -->
+            <form id="searchForm"> <!-- Formulaire de recherche -->
+                <input type="text" id="searchInput" placeholder="Rechercher un anime..."> <!-- Champ de recherche par texte -->
+                <input type="number" id="yearFilter" placeholder="Année..."> <!-- Filtre par année -->
+                <select id="sortFilter"> <!-- Menu déroulant pour trier les résultats -->
+                    <option value="">Trier par</option> <!-- Option par défaut -->
+                    <option value="popularity">Popularité</option> <!-- Option pour trier par popularité -->
+                    <option value="score">Score</option> <!-- Option pour trier par score -->
+                </select>
+                <select id="themeFilter"> <!-- Menu déroulant pour filtrer par genre -->
+                    <option value="">Tous les genres</option> <!-- Option par défaut -->
+                    <option value="1">Action</option> <!-- Option pour le genre Action -->
+                    <option value="4">Comédie</option> <!-- Option pour le genre Comédie -->
+                    <option value="8">Drame</option> <!-- Option pour le genre Drame -->
+                    <option value="2">Aventure</option> <!-- Option pour le genre Aventure -->
+                    <option value="10">Fantaisie</option> <!-- Option pour le genre Fantaisie -->
+                    <option value="30">Sport</option> <!-- Option pour le genre Sport -->
+                    <option value="19">Musique</option> <!-- Option pour le genre Musique -->
+                    <option value="7">Mystère</option> <!-- Option pour le genre Mystère -->
+                    <option value="37">Surnaturel</option> <!-- Option pour le genre Surnaturel -->
+                    <option value="22">Romance</option> <!-- Option pour le genre Romance -->
+                </select>
+                <button type="submit">🔍 Rechercher</button> <!-- Bouton pour lancer la recherche -->
+            </form>
+        </div>
+        <div id="animeList" class="grid"></div> <!-- Section pour afficher la liste des animes -->
+        <div id="pagination"></div> <!-- Section pour la pagination -->
+    </div>
+    <script src="index.js"></script> <!-- Lien vers le fichier JavaScript principal -->
+    <script>
+        AOS.init(); <!-- Initialisation de la bibliothèque AOS pour les animations -->
+    </script>
+</body>
+</html> <!-- Fin du document HTML -->

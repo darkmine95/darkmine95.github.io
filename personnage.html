@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!-- Déclare le type de document comme HTML5 -->
+<html lang="fr"> <!-- Début du document HTML avec la langue définie sur le français -->
+<head>
+    <meta charset="UTF-8"> <!-- Définit l'encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Assure une mise en page réactive pour différents appareils -->
+    <title>Détails du Personnage</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="personnage.css"> <!-- Lie une feuille de style CSS externe -->
+</head>
+<body class="dark-mode"> <!-- Corps du document avec un thème sombre -->
+    <div class="container"> <!-- Conteneur principal pour organiser le contenu -->
+        <h1 id="characterName">Nom du Personnage</h1> <!-- Nom du personnage -->
+        <div class="character-details-container"> <!-- Conteneur pour les détails du personnage -->
+            <img id="characterImage" src="" alt="Image du Personnage"> <!-- Image du personnage -->
+            <div id="characterDetails"> <!-- Conteneur pour les détails textuels du personnage -->
+                <h2>Détails du Personnage</h2> <!-- Sous-titre pour les détails du personnage -->
+                <p id="characterDescription"></p> <!-- Description du personnage -->
+                <p><strong>Rôle :</strong> <span id="characterRole"></span></p> <!-- Rôle du personnage -->
+                <p><strong>Voix (Japonais) :</strong> <span id="characterVoiceActor"></span></p> <!-- Voix japonaise du personnage -->
+                <p><strong>Voix (Français) :</strong> <span id="characterVoiceActorFR"></span></p> <!-- Voix française du personnage -->
+            </div>
+        </div>
+        <button id="backButton">Retour à l'anime</button> <!-- Bouton pour revenir à la page de l'anime -->
+        <div id="errorDiv" style="color: red;"></div> <!-- Div pour afficher les messages d'erreur en rouge -->
+    </div>
+    <script src="personnage.js"></script> <!-- Lien vers un fichier JavaScript externe -->
+</body>
+</html>

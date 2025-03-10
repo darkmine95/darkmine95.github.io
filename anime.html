@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- Déclare le type de document comme HTML5 -->
+<html lang="fr"> <!-- Début du document HTML avec la langue définie sur le français -->
+<head>
+    <meta charset="UTF-8"> <!-- Définit l'encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Assure une mise en page réactive pour différents appareils -->
+    <title>Détails de l'Anime</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="details_anime.css"> <!-- Lie une feuille de style CSS externe -->
+</head>
+<body>
+    <div class="container"> <!-- Conteneur principal pour organiser le contenu -->
+        <h1 id="animeTitle">Titre de l'Anime</h1> <!-- Titre de l'anime -->
+        <img id="animeImage" src="" alt="Anime Image"> <!-- Image de l'anime -->
+        <p id="animeSynopsis"></p> <!-- Synopsis de l'anime -->
+        <p><strong>Score :</strong> <span id="animeScore"></span></p> <!-- Score de l'anime -->
+        <p><strong>Genres :</strong> <span id="animeGenres"></span></p> <!-- Genres de l'anime -->
+        <p><strong>Statut :</strong> <span id="animeStatus"></span></p> <!-- Statut de l'anime (en cours, terminé, etc.) -->
+        <p><strong>Nombre d'épisodes :</strong> <span id="animeEpisodes"></span></p> <!-- Nombre d'épisodes -->
+        <p><strong>Année de sortie :</strong> <span id="animeYear"></span></p> <!-- Année de sortie de l'anime -->
+        <p><strong>Studio :</strong> <span id="animeStudio"></span></p> <!-- Studio de production -->
+        <h2>Personnages Principaux</h2> <!-- Sous-titre pour les personnages principaux -->
+        <div id="characters" class="character-container"></div> <!-- Conteneur pour les personnages principaux -->
+        <a href="index.html" class="back-button">Retour à la liste</a> <!-- Lien pour revenir à la liste des animes -->
+    </div>
+    <script src="animé.js"></script> <!-- Lien vers un fichier JavaScript externe -->
+</body>
+</html>
